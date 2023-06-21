@@ -3,7 +3,7 @@
 }
 
 body{
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     background-color: grey;
     color:black;
     margin: 0;
@@ -37,6 +37,10 @@ body{
     transition: transform 0.5s linear;
 }
 
+.container.show-nav .circle{
+    transform: rotate(-70deg);
+}
+
 .circle button{
     cursor: pointer;
     position: absolute;
@@ -60,6 +64,7 @@ body{
 .circle button#close{
     top: 60%;
     transform: rotate(90deg);
+    transform-origin: top left;
 }
 
 .container.show-nav + nav li{
@@ -88,12 +93,13 @@ nav ul li{
 }
 
 nav ul li i{
-     font-size: 20px;
+    font-size: 20px;
     margin-right: 10px;
 }
 
 nav ul li + li{
     margin-left: 15px;
+    transform: translateX(-150px);
 }
 
 nav ul li + li + li{

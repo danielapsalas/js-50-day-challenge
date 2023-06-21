@@ -2,17 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rotating Navigation</title>
     <link rel="stylesheet" href="rotating-navigation.css">
+  <script src="https://kit.fontawesome.com/a88297ca40.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<div class="container show-nav">
+<div class="container">
   <div class="circle-container">
     <div class="circle">
       <button id="close">
         <i class="fas fa-times"></i>
       </button>
-      <button id="open" class="fas fa-bars">
+      <button id="open">
         <i class="fas fa-bars"></i>
       </button>
     </div>
@@ -29,6 +31,14 @@
   </div>
 </div>
 
+<nav>
+  <ul>
+    <li><i class="fas fa-home"></i>Home</li>
+    <li><i class="fas fa-user-alt"></i>About</li>
+    <li><i class="fas fa-envelope"></i>Contact</li>
+  </ul>
+</nav>
 
+<script src="rotating-navigation.js"></script>
 </body>
 </html>
