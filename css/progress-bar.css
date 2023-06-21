@@ -24,7 +24,7 @@ body{
     width: 350px;
 }
 
-.progress::before{
+.progress-container::before{
     content: '';
     background-color: #808080;
     position: absolute;
@@ -34,6 +34,7 @@ body{
     width: 100%;
     transform: translateY(-50%);
     z-index: -1;
+    transition: .4s ease;
 }
 
 .progress{
@@ -57,7 +58,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 3px solid #9077dc;
+    border: 3px solid #999;
     transition: .4s ease;
 }
 
